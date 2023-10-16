@@ -30,7 +30,7 @@ En **Nio** encontrarás:
 - Recursos
 - Capacitaciones
 
-### Acceder a My Edvolution
+### Acceder a Nio
 
 1. Debes tener asignada una licencia Teaching and Learning
 1. Accede a [https://nioapp.com/](https://nioapp.com/)
@@ -39,10 +39,6 @@ En **Nio** encontrarás:
 #### Inicio
 
 Este panel tiene un resumen informativo y enlaces a recursos recientes.
-
-#### Recursos
-
-Típicamente utilizarás los apartados de **Cursos** y **Otros**, la descripción de cada uno es:
 
 - **Recursos**. Podrás elegir, de acuerdo a tus temas de interés, recursos didácticos y de formación en el uso de estrategias y tecnología enfocada a la educación.
 - **Academia**. Conoce ofertas adicionales que puedes tomar por tu cuenta en áreas específicas de la tecnología educativa.
