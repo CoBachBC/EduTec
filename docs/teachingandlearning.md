@@ -23,7 +23,7 @@ Existen otras versiones de paga con funciones adicionales. Algunas de estas func
 
 ## ¿Qué es Teaching and Learning?
 
-El licenciamiento Teaching and Learning (**T&A** de aquí en adelante) es la forma en que Google pone a disposición de escuelas funciones y características adicionales, las cuales están seleccionadas por ellos pensadas expresamente para el ámbito docente. Por lo que **T&A** agrega funciones al usuario que se le asigna.
+El licenciamiento Teaching and Learning (**T&L** de aquí en adelante) es la forma en que Google pone a disposición de escuelas funciones y características adicionales, las cuales están seleccionadas por ellos pensadas expresamente para el ámbito docente. Por lo que **T&L** agrega funciones al usuario que se le asigna.
 
 ### Funciones y características que agrega al usuario
 
@@ -32,12 +32,12 @@ El licenciamiento Teaching and Learning (**T&A** de aquí en adelante) es la for
 - Grupos separados dentro de la videollamada
 - Reportes ilimitados de originalidad en Classroom
 
-### T&A no modifica lo que ya existe
+### T&L no modifica lo que ya existe
 
 - No modifica tu contraseña
 - No afecta el contenido que ya existe en tu cuenta
 - No te da más almacenamiento
 
-### ¿Qué pasa si me asignan una licencia T&A y después la remueven?
+### ¿Qué pasa si me asignan una licencia T&L y después la remueven?
 
 En caso de haber sido asignado una licencia, y posteriormente te sea removida, lo único que sucederá es que **perderás el acceso a las funciones y características adicionales** no perderás el contenido que hayas creado previamente con sus funciones. La información que almacenas en tu cuenta solo puede ser eliminada por ti.
