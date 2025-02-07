@@ -28,7 +28,7 @@ Si tienes tiempo y quieres descubrir los diferentes temas, echa un vistazo a la 
 
 Usa la herramienta de contacto para cualquier duda a la que no encuentres respuesta, si quieres sugerir un tema, o si quieres contribuir a publicar información para ayudar a los demás.
 
-## Acerca del proyecto
+## Acerca del proyecto 
 
 Tecnología Educativa CBBC &copy; 2020-{{ "now" | date: "%Y" }} por el [Departamento de informática CoBach BC](https://github.com/CoBachBC).
 
