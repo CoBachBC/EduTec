@@ -4,7 +4,7 @@ title: Google Workspace
 nav_order: 2
 ---
 
-# Google Chrome
+# Google Workspace
 {: .no_toc }
 
 ## Temas
