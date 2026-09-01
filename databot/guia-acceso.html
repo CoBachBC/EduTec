@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guía de acceso - Data Bot CoBach BC</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --azul: #1a56a0; --azul-osc: #0e3d75; --azul-claro: #e8f0fb;
+  --pizarra: #2d3f50; --gris: #6b7f94; --gris-claro: #f4f7fb;
+  --amarillo: #f5a623; --rojo: #b91c1c; --rojo-claro: #fef2f2;
+  --verde: #1a7a4a; --verde-claro: #f0fdf4;
+  --texto: #1e2d3d; --borde: #dde3ea; --blanco: #fff;
+}
+body { font-family: "Inter", system-ui, sans-serif; background: var(--gris-claro); color: var(--texto); line-height: 1.6; }
+
+header {
+  background: var(--azul);
+  color: #fff;
+  padding: 20px 5%;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+header svg { flex-shrink: 0; }
+header h1 { font-size: 1.1rem; font-weight: 700; }
+header p  { font-size: .8rem; opacity: .75; }
+
+.container { max-width: 760px; margin: 0 auto; padding: 40px 20px 60px; }
+
+.intro {
+  background: var(--blanco);
+  border: 1px solid var(--borde);
+  border-radius: 12px;
+  padding: 28px;
+  margin-bottom: 32px;
+  line-height: 1.7;
+}
+.intro h2 { font-size: 1.2rem; font-weight: 800; margin-bottom: 10px; color: var(--pizarra); }
+.intro p  { font-size: .93rem; color: var(--gris); }
+
+.step-card {
+  background: var(--blanco);
+  border: 1px solid var(--borde);
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.step-head {
+  padding: 16px 22px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  border-bottom: 1px solid var(--borde);
+  background: #fafcff;
+}
+.step-num {
+  width: 36px; height: 36px;
+  background: var(--azul);
+  color: #fff;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 800;
+  font-size: .95rem;
+  flex-shrink: 0;
+}
+.step-head h3 { font-size: .97rem; font-weight: 700; color: var(--pizarra); }
+.step-body { padding: 20px 22px; }
+.step-body p { font-size: .9rem; color: var(--gris); margin-bottom: 12px; line-height: 1.7; }
+.step-body p:last-child { margin-bottom: 0; }
+.step-body strong { color: var(--texto); }
+
+/* Pantalla de captura */
+.screen-wrap {
+  margin: 16px 0;
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.screen-img {
+  border: 2px solid var(--borde);
+  border-radius: 10px;
+  overflow: hidden;
+  flex-shrink: 0;
+  box-shadow: 0 4px 16px rgba(0,0,0,.1);
+}
+.screen-img img { display: block; width: 200px; }
+.screen-caption { flex: 1; min-width: 200px; }
+.screen-caption h4 { font-size: .88rem; font-weight: 700; color: var(--pizarra); margin-bottom: 6px; }
+.screen-caption p  { font-size: .84rem; color: var(--gris); line-height: 1.65; }
+
+/* Alerta de advertencia */
+.alert {
+  border-radius: 9px;
+  padding: 14px 16px;
+  font-size: .86rem;
+  line-height: 1.65;
+  margin: 14px 0;
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+.alert-warn { background: #fffbeb; border: 1.5px solid #fcd34d; color: #78350f; }
+.alert-ok   { background: var(--verde-claro); border: 1.5px solid #86efac; color: #14532d; }
+.alert-info { background: var(--azul-claro); border: 1.5px solid #93c5fd; color: var(--azul-osc); }
+.alert-icon { font-size: 1.1rem; flex-shrink: 0; margin-top: 1px; }
+
+/* Acción en botón */
+.action-btn {
+  display: inline-block;
+  background: var(--azul);
+  color: #fff;
+  font-weight: 700;
+  font-size: .88rem;
+  padding: 10px 22px;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-top: 8px;
+}
+
+/* Checkbox list */
+.checklist { list-style: none; margin: 10px 0; }
+.checklist li {
+  padding: 6px 0;
+  font-size: .88rem;
+  color: var(--gris);
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  border-bottom: 1px solid var(--borde);
+}
+.checklist li:last-child { border-bottom: none; }
+.checklist li::before { content: "✅"; flex-shrink: 0; margin-top: 1px; }
+
+footer {
+  text-align: center;
+  padding: 24px;
+  font-size: .78rem;
+  color: var(--gris);
+  border-top: 1px solid var(--borde);
+  background: var(--blanco);
+  margin-top: 40px;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <svg width="36" height="36" viewBox="0 0 40 40" fill="none">
+    <rect width="40" height="40" rx="10" fill="rgba(255,255,255,0.15)"/>
+    <rect x="6"  y="24" width="6" height="10" rx="1.5" fill="white"/>
+    <rect x="14" y="16" width="6" height="18" rx="1.5" fill="white"/>
+    <rect x="22" y="10" width="6" height="10" rx="1.5" fill="white" opacity=".9"/>
+    <rect x="30" y="18" width="4" height="16" rx="1.5" fill="white" opacity=".85"/>
+    <circle cx="24" cy="26" r="6.5" stroke="white" stroke-width="2.2" fill="rgba(255,255,255,0.15)"/>
+    <line x1="28.8" y1="30.8" x2="33.5" y2="35.5" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+  </svg>
+  <div>
+    <h1>Data Bot - Guía de primer acceso</h1>
+    <p>CoBach BC - Departamento de Informática</p>
+  </div>
+</header>
+
+<div class="container">
+
+  <div class="intro">
+    <h2>Solo ocurre una vez</h2>
+    <p>La primera vez que abras el asistente, Google te pedirá confirmar tu identidad y autorizar el acceso. <strong>En las siguientes visitas entrarás directo, sin interrupciones.</strong></p>
+    <p style="margin-top:8px;">Una de las pantallas tiene una advertencia en rojo - es normal. Esta guía te explica qué hacer.</p>
+  </div>
+
+  <!-- PASO 1 -->
+  <div class="step-card">
+    <div class="step-head">
+      <div class="step-num">1</div>
+      <h3>La pantalla roja "no verificada" — es normal</h3>
+    </div>
+    <div class="step-body">
+      <div class="screen-wrap">
+        <div class="screen-img">
+          <img src="inicio-permisos.jpg">
+        </div>
+        <div class="screen-caption">
+          <h4>¿Por qué aparece esto en rojo?</h4>
+          <p>Google marca como "no verificada" a cualquier herramienta interna que no haya pasado su proceso de revisión pública — pensado para apps comerciales, no para uso institucional. <strong>Data Bot fue desarrollado por el Departamento de Informática de CoBach BC.</strong></p>
+        </div>
+      </div>
+      <div class="alert alert-warn">
+        <span class="alert-icon">⚠️</span>
+        <span>Esta pantalla puede parecer alarmante. <strong>No la cierres.</strong> Todos los usuarios de CoBach BC la verán la primera vez.</span>
+      </div>
+      <p><strong>Lo que debes hacer:</strong></p>
+      <ol style="margin: 10px 0 0 20px; font-size:.88rem; color:var(--gris); line-height:2;">
+        <li>Haz clic en el <strong>botón azul</strong> ("Revisar...") para continuar</li>
+      </ol>
+    </div>
+  </div>
+
+  <!-- PASO 2 -->
+  <div class="step-card">
+    <div class="step-head">
+      <div class="step-num">2</div>
+      <h3>Confirma tu cuenta institucional</h3>
+    </div>
+	<div class="step-body">
+      <div class="screen-wrap">
+        <div class="screen-img">
+          <img src="cuenta-permisos.jpg">
+        </div>
+        <div class="screen-caption">
+          <h4>¿Qué debes hacer?</h4>
+          <p>Selecciona tu cuenta <strong>@cobachbc.edu.mx</strong> y haz clic en <strong>"Continuar"</strong>.</p>
+          <div class="alert alert-info">
+            <span class="alert-icon">ℹ️</span>
+            Si ves otra cuenta, ciérrala e inicia sesión con tu correo institucional.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PASO 3 -->
+  <div class="step-card">
+    <div class="step-head">
+      <div class="step-num">3</div>
+      <h3>Autoriza los permisos necesarios</h3>
+    </div>
+    <div class="step-body">
+      <div class="screen-wrap">
+        <div class="screen-img">
+          <img src="permisos.jpg">
+        </div>
+        <div class="screen-caption">
+          <h4>¿Qué permisos se solicitan?</h4>
+          <ul class="checklist">
+            <li><strong>Ver archivos de Google Drive</strong> — para mostrarte la lista de tus hojas de cálculo recientes</li>
+            <li><strong>Ver y editar Hojas de Cálculo</strong> — para leer los datos de tu archivo y guardar resultados exportados</li>
+            <li><strong>Conectarse a un servicio externo</strong> — para comunicarse con el servicio de inteligencia artificial de Google (Gemini)</li>
+          </ul>
+        </div>
+      </div>
+      <div class="alert alert-ok">
+        <span class="alert-icon">✅</span>
+        <span>El asistente <strong>solo lee</strong> tus archivos para responder preguntas. No los modifica ni los copia.</span>
+      </div>
+      <p><strong>Lo que debes hacer:</strong> selecciona los tres permisos y haz clic en <strong>"Continuar"</strong>. Después entrarás directo al asistente.</p>
+    </div>
+  </div>
+
+  <!-- RESUMEN -->
+  <div class="step-card">
+    <div class="step-head">
+      <div class="step-num" style="background:var(--verde);">✓</div>
+      <h3>Listo — las próximas veces entras directo</h3>
+    </div>
+    <div class="step-body">
+      <p>Google recuerda tu autorización. <strong>No verás estas pantallas de nuevo</strong> al abrir el asistente.</p>
+      <div class="alert alert-info">
+        <span class="alert-icon">ℹ️</span>
+        Si el asistente recibe una actualización importante, Google podría pedirte autorizar de nuevo. El proceso es idéntico a esta guía.
+      </div>
+      <p style="margin-top:12px;">¿Problemas? Contacta al Departamento de Informática.</p>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  Data Bot · CoBach BC &nbsp;·&nbsp; Departamento de Informática &nbsp;·&nbsp; Colegio de Bachilleres del Estado de Baja California
+</footer>
+
+</body>
+</html>
